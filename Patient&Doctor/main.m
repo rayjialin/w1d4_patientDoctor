@@ -34,12 +34,12 @@ int main(int argc, const char * argv[]) {
 
         Patient *patient3 = [Patient new];
         patient3.name = @"patient3";
-        patient3.symptoms = @"headache";
-        patient3.isMedicineRequest = NO;
+        patient3.symptoms = @"headaaaache";
+        patient3.isMedicineRequest = YES;
         patient3.healthCard = YES;
         [patientList addObject:patient3];
 
-
+        
         for (Patient *patient in patientList){
 
             if ([patient visitDoctor:doctor1]){

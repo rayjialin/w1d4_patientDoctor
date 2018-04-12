@@ -33,10 +33,11 @@
         if ([patient.symptoms isEqualToString:key]){
             patient.prescriptionHistory[key] = prescription.prescriptionReference[key];
             return prescription.prescriptionReference[key];
+        }else{
+            //do otherthing if it is a new symptoms
+            patient.prescriptionHistory[key] = @"new medicine";
         }
     }
-    
-    //do otherthing if it is a new symptoms
     return @"new medicine";
     
 }
